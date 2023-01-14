@@ -1,6 +1,6 @@
 import {Builder, By, Key, until} from "selenium-webdriver";
 import {assert, expect} from "chai";
-import BasePage from "../Сommon methods/BasePage.js";
+import BasePage from "../tests_lib/Сommon methods/BasePage.js";
 //webdriver-manager start
 
 describe("Registration", function () {

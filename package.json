@@ -6,16 +6,14 @@
     "update": "\"webdriver-manager update",
     "start": "webdriver-manager start",
     "testRun": "mocha --no-timeouts",
-    "test": "start-server-and-test start 4444 testRun"
+    "test": "start-server-and-test start 4444 testRun",
+    "selenium": "mocha test/**/*.js --no-timeouts --reporter mochawesome --reporter-options reportDir=tests_lib\\test_reports,reportFilename=report,autoOpen=true"
   },
   "dependencies": {
-    "chai": "^4.3.6",
-    "mocha": "^10.1.0",
-    "selenium-webdriver": "^4.5.0",
-    "webdriver-manager": "^12.1.8"
-  },
-  "devDependencies": {
-    "nyc": "^15.1.0",
-    "start-server-and-test": "^1.15.2"
+    "chai": "^4.3.7",
+    "chromedriver": "^109.0.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.7.1"
   }
 }
